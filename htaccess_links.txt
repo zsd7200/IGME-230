@@ -1,8 +1,0 @@
-Non-Existent Page:
-https://people.rit.edu/~zsd7200/230/error/404
-
-Error Directory:
-https://people.rit.edu/~zsd7200/230/error/
-
-Auth Page:
-https://people.rit.edu/~zsd7200/230/auth/
