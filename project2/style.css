@@ -1,0 +1,164 @@
+/* center everything within the <body> tag and display the background */
+body{
+	position: relative;
+	text-align: center;
+	font-family: 'VT323', monospace;
+	font-size: 16pt;
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* add black border around everything in the <main> tag */
+main{
+	width: 600px;
+	height: 750px;
+	border: 5px solid black;
+	margin: auto;
+	background-color: white;
+}
+
+/* style the headers */
+h1{
+	font-family: 'Press Start 2P', cursive;
+	font-size:1.4em;
+	font-weight: normal;
+	margin-bottom: 2px;
+	position: relative;
+}
+
+h3 { font-weight: normal; }
+
+/* Grid and cell styling */
+#gridContainer{
+	padding: 0;
+	bottom: 375px;
+	display: inline-block;
+	position:relative;
+}
+
+span.cell{
+	height:23px;
+	width:23px;
+	border:1px solid purple; /* actual width & height is 25px because of border */
+	background-color: #ccc;
+	padding:0;
+	margin:0;
+	position:absolute;
+}
+
+span.cellSelected{
+	height:25px;
+	width:25px;
+	background-color: black;
+	padding:0;
+	margin:0;
+	position:absolute;
+}
+
+/* styling to make the button fit the aesthetic of the rest of the page */
+button{
+	position: relative;
+	font-size: 30px;
+	font-family: 'VT323', monospace;
+	padding: 5px;
+	right: 25px;
+	top: 90px;
+}
+
+/* applied to each horizontal <p> tag */
+#horizText p{
+	border:1px solid white;
+	border-bottom: 1px solid purple;
+	border-right: 1px solid purple;
+	text-align: right;
+	top:18px;
+	height:23px;
+	padding: 0;
+	padding-right: 3px;
+	margin:0;
+	position:relative;
+}
+
+/* applied to all the vertical lines */
+.vert p{
+	display: inline-block;
+	border:1px solid white;
+	border-right: 1px solid purple;
+	text-align: center;
+	top: 10px;
+	height:23px;
+	width:23px;
+	padding: 0;
+	margin:0;
+	position:relative;
+}
+
+/* styling for the fading tutorial text */
+#tutorial {
+	transition: opacity .5s ease-in-out;
+	height: 55px;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+/* styling to make the button fit the aesthetic of the rest of the page */
+button{
+	position: relative;
+	font-size: 30px;
+	font-family: 'VT323', monospace;
+	padding: 5px;
+	top: 90px;
+	border-radius: 1px;
+	background-color: #cccccc;
+	border: 2px solid purple;
+}
+
+button:hover{ border-color: magenta; background-color: #b7b7b7; }
+button:active{ border-color: purple; background-color: #7a7a7a; }
+
+/* navigation styling */
+#navUl{
+	list-style-type: none;
+	font-size: 13pt;
+	padding: 0px;
+	margin-top: 3px;
+}
+
+.navLi{ 
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* styling for references list (list style or padding) */
+.ref  {
+	list-style-type: none;
+	padding: 0px;
+	padding-bottom: 5px;
+}
+
+/* styling for links */
+a{transition: .5s;}
+a:link{color: black;}
+a:visited{color: black;}
+a:hover{color: lightgray;}
+a:active{color: gray;}
+
+/* positioning of grid and text on each level page */
+.tut, .tut p{ right: 133px; width:28px; }
+.easy, .easy p{ right: 157px; width:60px; }
+.med, .med p{ right: 157px; width:28px; }
+
+/* positioning of buttons on each level page */
+#backButton, #nextButton{ right: 36px; }
+#easyButton { right: 69px; }
+#medButton { right: 37px; }
+
+#horizText { display:inline-block; } /* This is so centering works properly */
+
+/* These lines are so the vertical text does not appear to have borders */
+#vertText1 p{ border-bottom: 1px solid purple; }
+#vertText2 p{ border-bottom: none; }
+#vertText3 p{ border-bottom: none; }
+#vertText4 p{ border-bottom: none; }
